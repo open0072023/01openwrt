@@ -23,9 +23,9 @@ env:
   REPO_URL: https://github.com/Leo357449107/qsdk_cmiot-ax6
   REPO_BRANCH: qsdk_11.5.0.6_k4.4
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: ./config/cmiot_ax18/zn_m2_sdf8057.config
-  DIY_P1_SH: ./config/diy-part1.sh
-  DIY_P2_SH: ./config/diy-part2.sh
+  CONFIG_FILE: ./config/zn_m2.config
+  DIY_P1_SH: diy-part1.sh
+  DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
