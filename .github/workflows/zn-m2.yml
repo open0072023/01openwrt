@@ -20,8 +20,8 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/open0072023/ipq6000-wifi
-  REPO_BRANCH: wifi
+  REPO_URL: https://github.com/Leo357449107/qsdk_cmiot-ax6
+  REPO_BRANCH: qsdk_11.5.0.6_k4.4
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: ./config/cmiot_ax18/zn_m2_sdf8057.config
   DIY_P1_SH: ./custom/cmiot_ax18/sdf8057/diy-part1.sh
@@ -35,7 +35,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-18.04
 
     steps:
     - name: Checkout
