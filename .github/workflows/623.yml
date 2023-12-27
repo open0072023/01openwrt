@@ -68,8 +68,8 @@ jobs:
 
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
-           sudo rm -rf openwrt/package/firmware/ath11k-firmware/files/IPQ6018
-           svn co https://github.com/quic/upstream-wifi-fw/trunk/ath11k-firmware/IPQ6018/hw1.0/2.5.0.1/WLAN.HK.2.5.0.1-01100-QCAHKSWPL_SILICONZ-1 openwrt/package/firmware/ath11k-firmware/files/IPQ6018
+           sudo rm -rf openwrt/feeds.conf.default
+           svn export https://github.com/open0072023/ipq6000-wifi/branches/master/feeds.conf.default openwrt/
            
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
