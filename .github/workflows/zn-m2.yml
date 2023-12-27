@@ -21,7 +21,7 @@ on:
 
 env:
   REPO_URL: https://github.com/open0072023/ipq6000-wifi
-  REPO_BRANCH: master
+  REPO_BRANCH: 89
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: ./config/zn-m2.config
   DIY_P1_SH: diy-part1.sh
@@ -68,11 +68,6 @@ jobs:
 
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
-
-    - name: Update hostapd
-      run: |
-           sudo rm -rf openwrt/package/network/services/hostapd
-           svn co https://github.com/w2xg2022/ax18usb/trunk/package/network/services/hostapd openwrt/package/network/services/hostapd
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
