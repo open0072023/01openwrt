@@ -21,7 +21,7 @@ on:
 
 env:
   REPO_URL: https://github.com/open0072023/ipq6000-wifi
-  REPO_BRANCH: 89
+  REPO_BRANCH: wifa
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: ./config/zn-m2.config
   DIY_P1_SH: diy-part1.sh
