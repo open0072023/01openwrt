@@ -72,6 +72,12 @@ jobs:
            svn export https://github.com/open0072023/ipq6000-wifi/branches/master/feeds.conf.default openwrt/
            cd openwrt && ./scripts/feeds update -a
            
+    - name: Update usb
+      run: |
+         cd openwrt/target/linux/ipq60xx/files-4.4/arch/arm64/boot/dts/qcom/
+         sudo rm qcom-ipq6018-cmiot.dtsi
+         svn export https://github.com/open0072023/openwrt-gl-ax1800/branches/master/target/linux/ipq60xx/files-4.4/arch/arm64/boot/dts/qcom/qcom-ipq6018-cmiot.dtsi
+
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
 
